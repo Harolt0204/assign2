@@ -1,0 +1,11 @@
+
+Marriage Pact
+-------------
+
+Q1. It is your choice to use either an ordered or unordered set. In a few sentences, what are some of the tradeoffs between the two? Additionally, please give an example (that has not been shown in lecture) of a valid hash function that could be used to hash student names for an unordered set.
+A1. -The Set helps us by saving the items in order which is useful when you need to access these items in an orderly way. The unordered_set, is faster to add, search and delete, It is ideal if you just want to check if an element exists
+    -A hash converts a name into a unique number to look it up fast. A simple method is to start with 0, and for each letter multiply the current number by 31 and add the ASCII value of the letter.
+
+Q2. Note that we are saving pointers to names in the queue, not names themselves. Why might this be desired in this problem? What happens if the original set where the names are stored goes out of scope and the pointers are referenced?
+A2. -Because it's more memory-efficient than storing full names, especially if the names are long strings.
+    -Pointers in the queue would point to invalid memory this can cause crashes, data corruption, or unexpected behavior in the program.
